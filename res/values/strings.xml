@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Simple Map</string>
+    <string name="dlg_msg_non_network_connection">Network connection is required in order to use this application. Please set up a network connection. </string>
+    <string name="dlg_title_non_network_connection">There is no network connection.</string>
+    <string name="dlg_caption_open_settings">Open Setting</string>
+    <string name="description_search">Search</string>
+    <string name="description_mylocation">current position</string>
+    <string name="dlg_msg_location_provider_checker">A positional information acquisition function is invalid.</string>
+
+</resources>

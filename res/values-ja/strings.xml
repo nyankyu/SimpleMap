@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">シンプルマップ</string>
+    <string name="dlg_msg_non_network_connection">アプリを使用するためには、ネットワーク接続が必要です。</string>
+    <string name="dlg_title_non_network_connection">ネットワーク接続がありません。</string>
+    <string name="dlg_caption_open_settings">設定を開く</string>
+    <string name="description_search">検索</string>
+    <string name="description_mylocation">現在位置</string>
+    <string name="dlg_msg_location_provider_checker">位置情報取得機能が無効です。</string>
+
+</resources>

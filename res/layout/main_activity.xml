@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 地図やボタン等をレイヤーに分けて表示する -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <!-- マップレイヤー -->
+    <com.google.android.maps.MapView
+        android:id="@+id/map_view_layer"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:apiKey="GoogleMapsAPI"
+        android:clickable="true" />
+
+    <!-- 検索レイヤー -->
+
+    <LinearLayout
+        android:id="@+id/search_layer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#aa777777"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/edit_address"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textSize="20dp" />
+
+        <ListView
+            android:id="@+id/candidate_list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="#00000000" />
+    </LinearLayout>
+
+
+    <!-- ボタンレイヤー -->
+
+    <RelativeLayout
+        android:id="@+id/button_layer"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#00000000" >
+
+        <ImageView
+            android:id="@+id/search_button"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            android:clickable="true"
+            android:contentDescription="@string/description_search"
+            android:scaleType="fitCenter"
+            android:background="@drawable/backgraund"
+            android:src="@android:drawable/ic_menu_search" />
+
+        <ImageView
+            android:id="@+id/mylocation_button"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_above="@id/search_button"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:clickable="true"
+            android:contentDescription="@string/description_mylocation"
+            android:scaleType="fitCenter"
+            android:background="@drawable/backgraund"
+            android:src="@android:drawable/ic_menu_mylocation" />
+    </RelativeLayout>
+
+</FrameLayout>
